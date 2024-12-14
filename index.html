@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La La Land Soundtrack</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
+
+<!-- UNPKG -->
+<script src="https://unpkg.com/fireworks-js@2.x/dist/index.umd.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-WV1Z4ELHG6"
+    ></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'G-WV1Z4ELHG6')
+    </script>
+  </head>
+  <body>
+    <body>
+      <audio id="audio">
+        <source id="source" src="/songs/another-day-of-sun.mp3" />
+      </audio>
+      <img class="grayscale" src="./images/lalalandbanner.jpg" />
+      <section class="analyser">
+        <div class="analysis"></div>
+      </section>
+      <section class="player" data-id="1" id="player">
+        <i id="icon-player" class="bi bi-play-fill icon-player"></i>
+        <img src="./images/lalalandcover.jpg" />
+      </section>
+
+      <section id="track-section" class="hidden">
+        <i id="app-close-icon" class="bi bi-x app-close-icon"></i>
+        <div class="trackc">
+          <ul class="track-items">
+            <li
+              id="track-item-1"
+              class="track-item"
+              data-title="Another Day Of Sun"
+              data-id="1"
+              data-src="another-day-of-sun"
+            >
+              <div class="track-item-img-warp">
+                <img
+                  src="./images/lalalandtrackcover.jpg"
+                  class="track-item-img"
+                />
+                <i id="track-icon-play-1" class="bi bi-play-fill icon-play"></i>
+              </div>
+
+              <h5 class="track-item-title">Another Day Of Sun</h5>
+              <p class="track-item-duration">3:49</p>
+            </li>
+
+            <li
+              id="track-item-2"
+              class="track-item"
+              data-title="Someone In The Crowd"
+              data-id="2"
+              data-src="someone-in-the-crowd"
+            >
+              <div class="track-item-img-warp">
+                <img
+                  src="./images/lalalandtrackcover.jpg"
+                  class="track-item-img"
+                />
+                <i id="track-icon-play-2" class="bi bi-play-fill icon-play"></i>
+              </div>
+
+              <h5 class="track-item-title">Someone In The Crowd</h5>
+              <p class="track-item-duration">4:20</p>
+            </li>
+
+            <li
+              id="track-item-3"
+              class="track-item"
+              data-title="A Lovely Night"
+              data-id="3"
+              data-src="a-lovely-night"
+            >
+              <div class="track-item-img-warp">
+                <img
+                  src="./images/lalalandtrackcover.jpg"
+                  class="track-item-img"
+                />
+                <i id="track-icon-play-3" class="bi bi-play-fill icon-play"></i>
+              </div>
+
+              <h5 class="track-item-title">A Lovely Night</h5>
+              <p class="track-item-duration">3:57</p>
+            </li>
+
+            <li
+              id="track-item-4"
+              class="track-item"
+              data-title="Late For The Date"
+              data-id="4"
+              data-src="mia-sebastian-theme"
+            >
+              <div class="track-item-img-warp">
+                <img
+                  src="./images/lalalandtrackcover.jpg"
+                  class="track-item-img"
+                />
+                <i id="track-icon-play-4" class="bi bi-play-fill icon-play"></i>
+              </div>
+
+              <h5 class="track-item-title">Late For The Date</h5>
+              <p class="track-item-duration">1:39</p>
+            </li>
+             <li
+              id="track-item-5"
+              class="track-item"
+              data-title="City Of Stars"
+              data-id="5"
+              data-src="city-of-stars"
+            >
+              <div class="track-item-img-warp">
+                <img
+                  src="./images/lalalandtrackcover.jpg"
+                  class="track-item-img"
+                />
+                <i id="track-icon-play-5" class="bi bi-play-fill icon-play"></i>
+              </div>
+
+              <h5 class="track-item-title">City Of Stars</h5>
+              <p class="track-item-duration">2:30</p>
+            </li>
+            <li
+              id="track-item-6"
+              class="track-item"
+              data-title="Herman’s Habit"
+              data-id="6"
+              data-src="herman-habit"
+            >
+              <div class="track-item-img-warp">
+                <img
+                  src="./images/lalalandtrackcover.jpg"
+                  class="track-item-img"
+                />
+                <i id="track-icon-play-6" class="bi bi-play-fill icon-play"></i>
+              </div>
+
+              <h5 class="track-item-title">Herman’s Habit</h5>
+              <p class="track-item-duration">1:52</p>
+            </li>
+            <li
+              id="track-item-7"
+              class="track-item"
+              data-title="Planetarium"
+              data-id="7"
+              data-src="planetarium"
+            >
+              <div class="track-item-img-warp">
+                <img
+                  src="./images/lalalandtrackcover.jpg"
+                  class="track-item-img"
+                />
+                <i id="track-icon-play-7" class="bi bi-play-fill icon-play"></i>
+              </div>
+
+              <h5 class="track-item-title">Planetarium</h5>
+              <p class="track-item-duration">4:18</p>
+            </li>
+            <li
+              id="track-item-8"
+              class="track-item"
+              data-title="Summer Montage"
+              data-id="8"
+              data-src="summer-montage"
+            >
+              <div class="track-item-img-warp">
+                <img
+                  src="./images/lalalandtrackcover.jpg"
+                  class="track-item-img"
+                />
+                <i id="track-icon-play-8" class="bi bi-play-fill icon-play"></i>
+              </div>
+
+              <h5 class="track-item-title">Summer Montage</h5>
+              <p class="track-item-duration">2:05</p>
+            </li>
+            <li
+              id="track-item-9"
+              class="track-item"
+              data-title="Start A Fire"
+              data-id="9"
+              data-src="start-a-fire"
+            >
+              <div class="track-item-img-warp">
+                <img
+                  src="./images/lalalandtrackcover.jpg"
+                  class="track-item-img"
+                />
+                <i id="track-icon-play-9" class="bi bi-play-fill icon-play"></i>
+              </div>
+
+              <h5 class="track-item-title">Start A Fire</h5>
+              <p class="track-item-duration">3:11</p>
+            </li>
+            <li
+              id="track-item-10"
+              class="track-item"
+              data-title="Engagement"
+              data-id="10"
+              data-src="engagement"
+            >
+              <div class="track-item-img-warp">
+                <img
+                  src="./images/lalalandtrackcover.jpg"
+                  class="track-item-img"
+                />
+                <i
+                  id="track-icon-play-10"
+                  class="bi bi-play-fill icon-play"
+                ></i>
+              </div>
+
+              <h5 class="track-item-title">Engagement</h5>
+              <p class="track-item-duration">1:28</p>
+            </li>
+            <li
+              id="track-item-11"
+              class="track-item"
+              data-title="The Fools Who Dream"
+              data-id="11"
+              data-src="the-fools-who-dream"
+            >
+              <div class="track-item-img-warp">
+                <img
+                  src="./images/lalalandtrackcover.jpg"
+                  class="track-item-img"
+                />
+                <i
+                  id="track-icon-play-11"
+                  class="bi bi-play-fill icon-play"
+                ></i>
+              </div>
+
+              <h5 class="track-item-title">The Fools Who Dream</h5>
+              <p class="track-item-duration">3:49</p>
+            </li>
+            <li
+              id="track-item-12"
+              class="track-item"
+              data-title="Epilogue"
+              data-id="12"
+              data-src="epilogue"
+            >
+              <div class="track-item-img-warp">
+                <img
+                  src="./images/lalalandtrackcover.jpg"
+                  class="track-item-img"
+                />
+                <i
+                  id="track-icon-play-12"
+                  class="bi bi-play-fill icon-play"
+                ></i>
+              </div>
+
+              <h5 class="track-item-title">Epilogue</h5>
+              <p class="track-item-duration">7:40</p>
+            </li>
+            <li
+              id="track-item-13"
+              class="track-item"
+              data-title="City Of Stars (Humming)"
+              data-id="13"
+              data-src="city-of-stars-humming"
+            >
+              <div class="track-item-img-warp">
+                <img
+                  src="./images/lalalandtrackcover.jpg"
+                  class="track-item-img"
+                />
+                <i
+                  id="track-icon-play-13"
+                  class="bi bi-play-fill icon-play"
+                ></i>
+              </div>
+
+              <h5 class="track-item-title">City Of Stars (Humming)</h5>
+              <p class="track-item-duration">2:44</p>
+            </li>
+            <li
+              id="track-item-14"
+              class="track-item"
+              data-title="The End"
+              data-id="14"
+              data-src="the-end"
+            >
+              <div class="track-item-img-warp">
+                <img
+                  src="./images/lalalandtrackcover.jpg"
+                  class="track-item-img"
+                />
+                <i
+                  id="track-icon-play-14"
+                  class="bi bi-play-fill icon-play"
+                ></i>
+              </div>
+
+              <h5 class="track-item-title">The End</h5>
+              <p class="track-item-duration">0:47</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="app-actions">
+        <i
+          id="app-previous-icon"
+          class="bi bi-caret-left-fill app-action-icon"
+        ></i>
+        <img src="/loop.png" class="app-action-loop-icon" />
+        <div class="app-action-infos">
+          <p id="app-action-info" class="app-action-info">
+            Another Day of Sun ...
+          </p>
+        </div>
+        <i id="app-board-icon" class="bi bi-list-ul app-action-icon"></i>
+        <i
+          id="app-next-icon"
+          class="bi bi-caret-right-fill app-action-icon"
+        ></i>
+      </section>
+
+      <!-- https://fireworks.js.org/   -->
+      <section id="fireworks"></section>
+
+      
+      <script src="script.js"></script>
+    </body>
+  </body>
+</html>
