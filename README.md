@@ -10,9 +10,6 @@ LaLaLand Sound Track
 - [@waiyan](https://github.com/koyandemo)
 
 
-## 🚀 About Me
-My name is Wai Yan.I am frontend developer.
-
 ## Tech Stack
 
 **Client:** Html,Css,Js
